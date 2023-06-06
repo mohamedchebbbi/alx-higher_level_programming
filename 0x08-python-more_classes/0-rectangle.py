@@ -1,9 +1,7 @@
 #!/usr/bin/python3
+'''Module for class'''
+
 
 class Rectangle:
+    '''This class defines empty'''
     pass
-
-my_rectangle = Rectangle()
-print(type(my_rectangle))
-print(my_rectangle.__dict__)
-
