@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-'''mod pour rectangle class'''
-
 class Rectangle:
-    ''' rectangle vide'''
     pass
+
+my_rectangle = Rectangle()
+print(type(my_rectangle))
+print(my_rectangle.__dict__)
+
