@@ -1,12 +1,28 @@
 #!/usr/bin/python3
+'''Module for Rectangle class.'''
+
 
 class Rectangle:
+    '''This class defines a simple Rectangle.'''
+
     def __init__(self, width=0, height=0):
+        '''Constructor.
+
+        Args:
+            width: The width of rectangle.
+            height: The height of rectangle.
+        '''
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        '''Property for the width of the rectangle.
+
+        Raises:
+            TypeError: If width is not an integer.
+            ValueError: If width is less than 0.
+        '''
         return self.__width
 
     @width.setter
@@ -19,6 +35,12 @@ class Rectangle:
 
     @property
     def height(self):
+        '''Property for the height of the rectangle.
+
+        Raises:
+            TypeError: If height is not an integer.
+            ValueError: If height is less than 0.
+        '''
         return self.__height
 
     @height.setter
@@ -30,19 +52,17 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        return self.__width * self.__height
+        '''Returns area of this rectangle.'''
+        return self.width * self.height
 
     def perimeter(self):
-        return 2 * (self.__width + self.__height)
+        '''Returns perimeter of this rectangle.'''
+        if not self.width or not self.height:
+            return 0
+        return (self.width + self.height) * 2
 
     def __str__(self):
-        if self.__width == 0 or self.__height == 0:
+        '''Returns string representation.'''
+        if not self.width or not self.height:
             return ""
-        rectangle = "#" * self.__width + "\n"
-        rectangle *= self.__height - 1
-        rectangle += "#" * self.__width
-        return rectangle
-
-    def __repr__(self):
-        return "Rectangle({}, {})".format(self.__width, self.__height)
-
+        return (("#" * self.width + "\n") * self.height)[:-1]
