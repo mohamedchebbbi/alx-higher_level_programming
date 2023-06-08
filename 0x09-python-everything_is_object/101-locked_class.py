@@ -3,4 +3,4 @@
 
 class LockedClass:
     '''class demonstraring a locked slots'''
-    __slots__ = 'first_name',
+    __slots__ = 'first_name'
