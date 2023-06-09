@@ -1,0 +1,15 @@
+test for add_integer module
+===========================
+
+import the function:
+     >>> add_integer = __import__("0-add_interger").add_integer
+
+check for module doc:
+     >>> mod_doc = __import__("0-add_integer")__doc__
+     >>> len(mod_doc) > 1
+     True
+
+check for function doc:
+     >>> func_doc = __import__("0-add_integer").add_integer.__doc__
+     >>> len(func_doc) > 1
+     True
