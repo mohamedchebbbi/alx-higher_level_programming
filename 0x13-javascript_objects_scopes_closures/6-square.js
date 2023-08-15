@@ -5,12 +5,12 @@ module.exports = class Square extends SquareA {
     if (c === undefined) {
       return this.print();
     } else {
-      let B = '';
+      let A = '';
       for (let i = 0; i < this.width; i++) {
-        B += c;
+        A += c;
       }
       for (let i = 0; i < this.height; i++) {
-        console.log(B);
+        console.log(A);
       }
     }
   }
