@@ -1,12 +1,12 @@
 #!/usr/bin/node
 let a = 0;
 process.argv.forEach((_v, _i) => {
-a++;
+  a++;
 });
 if (a <= 2) {
-console.log('No argument');
+  console.log('No argument');
 } else if (a === 3) {
-console.log('Argument found');
+  console.log('Argument found');
 } else {
-console.log('Arguments found');
+  console.log('Arguments found');
 }
