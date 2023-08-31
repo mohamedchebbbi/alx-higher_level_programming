@@ -18,7 +18,7 @@ def find_peak(l):
         if (m < s - 1 and l[m] < l[m + 1]):
             if m_e // 2 == 0:
                 m_e = 2
-            m = m + m_e : 2
+            m = m + m_e // 2
         elif m_e > 0 and l[m] < l[m - 1]:
             if m_e // 2 == 0:
                 m_e = 2
