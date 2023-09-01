@@ -2,7 +2,7 @@
 """
 My GitHub
 """
-import request
+import requests
 import sys
 import requests.auth import HTTPBasicAuth
 
