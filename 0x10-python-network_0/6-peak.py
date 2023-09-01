@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ Python script finds a peak in a list of unsorted integers. """
 
+
 def find_peak(list_i):
     """
-    args: 
-        list_i : list of integers to find peak
+    args:  list_i : list of integers to find peak
     Returns: peak of l
     """
     s = len(list_i)
