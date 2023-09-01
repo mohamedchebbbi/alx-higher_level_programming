@@ -2,7 +2,7 @@
 """
 post an email
 """
-import resuests
+import requests
 import sys
 
 
