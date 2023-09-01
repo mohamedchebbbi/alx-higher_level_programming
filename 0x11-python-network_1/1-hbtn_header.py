@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
-script that takes in a URL, sends a request to the URL and displays X-Request-Id variable in header
+1. Response header value #0
 """
-import sys
 import urllib.request
+import sys
+
 
 if __name__ == "__main__":
     URL = sys.argv[1]
